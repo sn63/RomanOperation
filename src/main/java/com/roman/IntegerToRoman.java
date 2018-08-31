@@ -27,6 +27,9 @@ public class IntegerToRoman {
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter the integer value :");
         int number = sc.nextInt();
-        System.out.println("The converted roman name : "+intToRoman(number));
+        if (number<1 || number>3999) {
+            System.out.println("Please enter the number belongs to 1 - 3999");
+        } else
+            System.out.println("The converted roman name : "+intToRoman(number));
     }
 }
